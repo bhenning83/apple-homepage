@@ -72,9 +72,14 @@ header {
     color: white;
     text-align: center;
 }
-section:last-of-type {
+section {
     flex: 3;
-    border: 5px solid blue;
+    display: flex;
+}
+section img {
+    margin: 2px;
+    width: 0;
+    flex: 1 1 auto;
 }
 header li {
     font-size: 14px;
@@ -121,8 +126,11 @@ footer:first-of-type {
     justify-content: space-between;
     align-items: center;
 }
+footer:first-of-type ul {
+    display: flex;
+    align-items: center;
+}
 footer:first-of-type ul li {
-    display: inline-block;
     padding: 0 10px;
 }
 footer:first-of-type img {
